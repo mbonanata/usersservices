@@ -1,0 +1,41 @@
+# Compilation Folders
+bin/
+target/
+
+# Eclipse Files
+.settings
+.classpath
+.project
+.cache
+
+# IntelliJ Idea Files
+.idea/
+.idea_modules
+*.iml
+
+# Sublime2 Files
+*.sublime*
+
+# Log files
+logs/
+*.log
+*.out
+
+# App Specific
+/modules/feeder/RUNNING_PID/modules/common/build.sbt~
+/modules/feeder/.build.sbt.swp
+/schema.cql~
+/modules/common/build.sbt~
+/modules/feeder/startup.bsas~
+/modules/feeder/startup.prod~
+/modules/feeder/startup.prodtest~
+/modules/webconsole/startup.prod~
+/modules/webconsole/startup.prodtest~
+/modules/webconsole/conf/application.conf
+/modules/feeder/conf/application.conf
+/modules/common/.cache-main
+/modules/webconsole/.cache-main
+/errors.cql~
+/modules/feeder/.cache-main
+/modules/feeder/app/com/despegar/perfdb/feeder/dao/ActivationDao.scala
+/modules/perfdb-2.4.2.zip

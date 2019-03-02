@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+cd "$(dirname "$0")"
+
+mvn clean package -U -DskipTests=true
+
+jar_file=target/$(ls target | grep "users-service.*.jar$")
+
+docker build --build-arg JAR_FILE=${jar_file} -t users-service .

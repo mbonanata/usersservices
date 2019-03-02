@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+docker rm $(docker ps -a | grep users-service | cut -d" " -f1)
+
+docker rmi users-service
+

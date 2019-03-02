@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-4p [%X{uow}-%X{requestId}] [${HOSTNAME}] [%t] (%C:%L\) : %m%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.eclipse.jetty" level="WARN" />
+    <logger name="com.despegar" level="DEBUG" />
+
+    <root level="INFO">
+        <appender-ref ref="Console" />
+    </root>
+
+</configuration>
